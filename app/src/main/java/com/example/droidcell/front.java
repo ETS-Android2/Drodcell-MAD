@@ -1,5 +1,4 @@
 package com.example.droidcell;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -23,11 +22,7 @@ import java.util.ArrayList;
 
 
 public class front extends AppCompatActivity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.front);
-    }
+
     RecyclerView recyclerView;
     FloatingActionButton add_button;
     ImageView empty_imageview;
@@ -40,7 +35,7 @@ public class front extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate1(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.front);
 
