@@ -23,7 +23,11 @@ import java.util.ArrayList;
 
 
 public class front extends AppCompatActivity {
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.front);
+    }
     RecyclerView recyclerView;
     FloatingActionButton add_button;
     ImageView empty_imageview;
@@ -33,10 +37,12 @@ public class front extends AppCompatActivity {
     ArrayList<String> book_id, book_title, book_author, book_pages;
     CustomAdapter customAdapter;
 
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate1(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.front);
 
         recyclerView = findViewById(R.id.recyclerView);
         add_button = findViewById(R.id.add_button);
