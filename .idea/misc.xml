@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/droidcell/app/src/main/res/drawable-v24/ic_add.xml" value="0.2755208333333333" />
+        <entry key="..\:/droidcell/app/src/main/res/layout/activity_add.xml" value="0.16893115942028986" />
         <entry key="..\:/droidcell/app/src/main/res/layout/activity_main.xml" value="0.16893115942028986" />
+        <entry key="..\:/droidcell/app/src/main/res/layout/front.xml" value="0.16893115942028986" />
       </map>
     </option>
   </component>
