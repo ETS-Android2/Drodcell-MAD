@@ -25,7 +25,7 @@
         android:id="@+id/sub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Page1:Patient Details"
+        android:text="Page2:Surgery Details"
         android:textColor="#011DB6"
         android:layout_marginTop="65dp"
         android:textStyle="italic"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.0"
         app:layout_constraintTop_toBottomOf="@+id/topic"/>
     <EditText
-        android:id="@+id/pid"
+        android:id="@+id/condition"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginTop="100dp"
@@ -62,7 +62,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pid" />
+        app:layout_constraintTop_toBottomOf="@+id/condition" />
 
     <EditText
         android:id="@+id/dob"

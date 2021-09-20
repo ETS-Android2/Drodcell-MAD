@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="610dp"
-    android:background="@drawable/p3"
-    tools:context=".MainActivity">
+    android:layout_height="700dp"
+    android:background="@drawable/p3">
 
 
     <Button
         android:id="@+id/button"
         android:layout_width="230dp"
         android:layout_height="70dp"
-        android:backgroundTint="#001892"
+        android:background="@drawable/button1"
+        android:backgroundTint="#0020BD"
         android:fontFamily="sans-serif-medium"
         android:text="@string/confirm_continue"
         android:textColor="#ffff"
@@ -22,6 +22,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
+        app:layout_constraintVertical_bias="0.892" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
