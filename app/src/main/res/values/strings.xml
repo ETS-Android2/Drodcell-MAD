@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">droidcell</string>
-    <string name="confirm_continue"><![CDATA[Confirm & continue]]></string>
+    <string name="app_name">SqliteTutorial</string>
 </resources>

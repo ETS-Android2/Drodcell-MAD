@@ -1,4 +1,4 @@
-package com.example.droidcell;
+package com.jovanovic.stefan.sqlitetutorial;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.droidcell", appContext.getPackageName());
+        assertEquals("com.jovanovic.stefan.sqlitetutorial", appContext.getPackageName());
     }
 }

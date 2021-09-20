@@ -1,4 +1,4 @@
-package com.example.droidcell;
+package com.jovanovic.stefan.sqlitetutorial;
 
 import org.junit.Test;
 

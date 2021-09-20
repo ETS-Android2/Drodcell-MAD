@@ -1,14 +1,4 @@
-package com.example.droidcell;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.database.Cursor;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
+package com.jovanovic.stefan.sqlitetutorial;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -16,12 +6,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-
-public class front extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FloatingActionButton add_button;
@@ -32,12 +35,10 @@ public class front extends AppCompatActivity {
     ArrayList<String> book_id, book_title, book_author, book_pages;
     CustomAdapter customAdapter;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.front);
+        setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.recyclerView);
         add_button = findViewById(R.id.add_button);
@@ -46,12 +47,12 @@ public class front extends AppCompatActivity {
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(front.this, AddActivity.class);
+                Intent intent = new Intent(MainActivity.this, AddActivity.class);
                 startActivity(intent);
             }
         });
 
-        myDB = new MyDatabaseHelper(front.this);
+        myDB = new MyDatabaseHelper(MainActivity.this);
         book_id = new ArrayList<>();
         book_title = new ArrayList<>();
         book_author = new ArrayList<>();
@@ -59,10 +60,10 @@ public class front extends AppCompatActivity {
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(front.this,this, book_id, book_title, book_author,
+        customAdapter = new CustomAdapter(MainActivity.this,this, book_id, book_title, book_author,
                 book_pages);
         recyclerView.setAdapter(customAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(front.this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
     }
 
@@ -113,10 +114,10 @@ public class front extends AppCompatActivity {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(front.this);
+                MyDatabaseHelper myDB = new MyDatabaseHelper(MainActivity.this);
                 myDB.deleteAllData();
                 //Refresh Activity
-                Intent intent = new Intent(front.this, front.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
