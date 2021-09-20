@@ -9,14 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.jovanovic.stefan.com.android.droidcell.UpdateActivity"
-            android:parentActivityName="com.jovanovic.stefan.com.android.droidcell.MainActivity"/>
+        <activity android:name=".UpdateActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name="com.jovanovic.stefan.com.android.droidcell.AddActivity"
+            android:name=".AddActivity"
             android:label="Add Book"
-            android:parentActivityName="com.jovanovic.stefan.com.android.droidcell.MainActivity" />
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".front"/>
         <activity
-            android:name="com.jovanovic.stefan.com.android.droidcell.MainActivity"
+            android:name=".front"
             android:label="Book Library">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
