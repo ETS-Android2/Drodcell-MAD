@@ -1,4 +1,4 @@
-package com.jovanovic.stefan.sqlitetutorial;
+package com.jovanovic.stefan.droidcell;
 
 import android.content.Context;
 
