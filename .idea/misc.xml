@@ -12,14 +12,15 @@
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/drawable/ic_add.xml" value="0.13148148148148148" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/drawable/ic_delete.xml" value="0.1" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_add.xml" value="0.1" />
-        <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_add_contact.xml" value="0.12590579710144928" />
+        <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_add.xml" value="0.25" />
+        <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_add_contact.xml" value="0.264" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_hallo.xml" value="0.26875" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_home.xml" value="0.26875" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_main1.xml" value="0.12590579710144928" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_main2.xml" value="0.26875" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_main3.xml" value="0.1" />
+        <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_precrip.xml" value="0.26875" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_update.xml" value="0.1" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_update_contact.xml" value="0.12590579710144928" />
         <entry key="..\:/itp/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/item_contact.xml" value="0.12590579710144928" />

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/addp"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
@@ -16,17 +17,20 @@
         android:layout_height="150dp"
         android:layout_marginBottom="20dp"
         android:onClick="openGalleries"
+
         android:scaleType="fitXY"
-        android:background="@drawable/logo"
-        app:srcCompat="@drawable/logo" />
+        android:background="@drawable/img"
+        app:srcCompat="@drawable/img" />
 
 
     <EditText
         android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/wrec"
         android:ems="10"
         android:inputType="textPersonName"
+
         android:hint=" ادخل اسمك " />
 
     <EditText
@@ -35,6 +39,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="ادخل رقم الهاتف"
+        android:background="@drawable/wrec"
         android:inputType="number" />
 
 
@@ -43,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ادخال البيانات"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/add"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:layout_marginTop="50dp"/>

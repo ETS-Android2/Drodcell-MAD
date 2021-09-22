@@ -5,27 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddActivity"
-    android:background="@drawable/kavitha"
+    android:background="@drawable/addp"
     android:padding="30dp">
 
     <EditText
         android:id="@+id/pid_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="120dp"
         android:ems="10"
         android:hint=""
+
+        android:background="@drawable/wrec"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <EditText
         android:id="@+id/preid_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/wrec"
         android:ems="10"
         android:hint="two"
         android:inputType="textPersonName"
@@ -33,45 +37,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pid_input" />
 
-
     <EditText
         android:id="@+id/doc_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/wrec"
         android:ems="10"
         android:hint="two"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/preid_input" />
+
     <EditText
         android:id="@+id/name_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/wrec"
         android:ems="10"
         android:hint="two"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doc_input" />
+
+
     <EditText
         android:id="@+id/address_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/wrec"
         android:ems="10"
         android:hint="two"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name_input" />
+
     <EditText
         android:id="@+id/contact_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/wrec"
         android:ems="10"
         android:hint="two"
         android:inputType="textPersonName"
@@ -79,13 +90,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address_input" />
 
-
     <EditText
         android:id="@+id/nic_input"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/wrec"
         android:ems="10"
         android:hint="there"
         android:inputType="number"
@@ -97,27 +108,16 @@
         android:id="@+id/add_button"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/add"
+
         android:text="Add"
-        android:textSize="20sp"
         android:textAllCaps="false"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nic_input" />
 
-
-
-
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:text="Add"
-        android:textSize="20sp"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

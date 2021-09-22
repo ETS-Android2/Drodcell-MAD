@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagep"
+    tools:context=".precrip">
+
+
+    <Button
+        android:id="@+id/add_button7"
+        android:layout_width="158dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginRight="224dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/place"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:hint="Prescription details"
+        android:textColor="#C54E4E"
+        android:textColorHint="#F6EDED"
+        android:textColorLink="#9A7D35"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+    <Button
+        android:id="@+id/add_button8"
+        android:layout_width="158dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="108dp"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="Add image "
+        android:background="@drawable/place"
+        android:textColorHint="#FAF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,7 +25,7 @@ import java.util.ArrayList;
 public class MainActivity2 extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    FloatingActionButton add_button,add_button1,add_button2;
+    Button add_button;
     ImageView empty_imageview;
     TextView no_data;
 
@@ -38,41 +39,13 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         recyclerView = findViewById(R.id.recyclerView);
-        add_button1 = findViewById(R.id.add_button1);
-        empty_imageview = findViewById(R.id.empty_imageview);
-        no_data = findViewById(R.id.no_data);
-        add_button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity2.this,AddContact.class);
-                startActivity(intent);
-
-
-
-            }
-        });
-
-        add_button2 = findViewById(R.id.add_button2);
-        empty_imageview = findViewById(R.id.empty_imageview);
-        no_data = findViewById(R.id.no_data);
-        add_button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity2.this,AddActivity.class);
-                startActivity(intent);
-
-
-
-            }
-        });
-
         add_button = findViewById(R.id.add_button);
         empty_imageview = findViewById(R.id.empty_imageview);
         no_data = findViewById(R.id.no_data);
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity2.this,UpdateContact.class);
+                Intent intent = new Intent(MainActivity2.this,AddActivity.class);
                 startActivity(intent);
 
 
