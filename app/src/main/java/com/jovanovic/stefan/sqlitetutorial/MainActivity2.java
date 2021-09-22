@@ -21,7 +21,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FloatingActionButton add_button,add_button1,add_button2;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_main2);
 
         recyclerView = findViewById(R.id.recyclerView);
         add_button1 = findViewById(R.id.add_button1);
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         add_button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                Intent intent = new Intent(MainActivity2.this,AddContact.class);
                 startActivity(intent);
 
 
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         add_button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                Intent intent = new Intent(MainActivity2.this,AddActivity.class);
                 startActivity(intent);
 
 
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                Intent intent = new Intent(MainActivity2.this,UpdateContact.class);
                 startActivity(intent);
 
 
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        myDB = new MyDatabaseHelper(MainActivity.this);
+        myDB = new MyDatabaseHelper(MainActivity2.this);
         medi_id = new ArrayList<>();
         medi_pid = new ArrayList<>();
         medi_preid = new ArrayList<>();
@@ -92,10 +92,10 @@ public class MainActivity extends AppCompatActivity {
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(MainActivity.this,this,medi_id, medi_pid,medi_preid,
+        customAdapter = new CustomAdapter(MainActivity2.this,this,medi_id, medi_pid,medi_preid,
                 medi_doc,medi_name,medi_address,medi_contact,medi_nic);
         recyclerView.setAdapter(customAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity2.this));
 
     }
 
@@ -150,10 +150,10 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(MainActivity.this);
+                MyDatabaseHelper myDB = new MyDatabaseHelper(MainActivity2.this);
                 myDB.deleteAllData();
                 //Refresh Activity
-                Intent intent = new Intent(MainActivity.this, UpdateActivity.class);
+                Intent intent = new Intent(MainActivity2.this, UpdateActivity.class);
                 startActivity(intent);
                 finish();
             }
