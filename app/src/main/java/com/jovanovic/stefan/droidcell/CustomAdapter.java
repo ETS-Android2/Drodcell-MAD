@@ -1,5 +1,6 @@
 package com.jovanovic.stefan.droidcell;
 
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -22,16 +23,19 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     private Context context;
     private Activity activity;
-    private ArrayList book_id, book_title, book_author, book_pages;
+    private ArrayList patient_id,patient_pid,patient_name,patient_dob,patient_address,patient_phone,patient_trustee;
 
-    CustomAdapter(Activity activity, Context context, ArrayList book_id, ArrayList book_title, ArrayList book_author,
-                  ArrayList book_pages){
+    CustomAdapter(Activity activity, Context context, ArrayList patient_id, ArrayList patient_pid, ArrayList patient_name,
+                  ArrayList patient_dob,ArrayList patient_address,ArrayList patient_phone,ArrayList patient_trustee){
         this.activity = activity;
         this.context = context;
-        this.book_id = book_id;
-        this.book_title = book_title;
-        this.book_author = book_author;
-        this.book_pages = book_pages;
+        this.patient_id = patient_id;
+        this.patient_pid = patient_pid;
+        this.patient_name = patient_name;
+        this.patient_dob = patient_dob;
+        this.patient_address = patient_address;
+        this.patient_phone = patient_phone;
+        this.patient_trustee = patient_trustee;
     }
 
     @NonNull
@@ -44,20 +48,26 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
-    public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
-        holder.book_id_txt.setText(String.valueOf(book_id.get(position)));
-        holder.book_title_txt.setText(String.valueOf(book_title.get(position)));
-        holder.book_author_txt.setText(String.valueOf(book_author.get(position)));
-        holder.book_pages_txt.setText(String.valueOf(book_pages.get(position)));
+    public void onBindViewHolder(@NonNull final MyViewHolder holder,final int position) {
+        holder.patient_id_txt.setText(String.valueOf(patient_id.get(position)));
+        holder.patient_pid_txt.setText(String.valueOf(patient_pid.get(position)));
+        holder.patient_name_txt.setText(String.valueOf(patient_name.get(position)));
+        holder.patient_dob_txt.setText(String.valueOf(patient_dob.get(position)));
+        holder.patient_address_txt.setText(String.valueOf(patient_address.get(position)));
+        holder.patient_phone_txt.setText(String.valueOf(patient_phone.get(position)));
+        holder.patient_trustee_txt.setText(String.valueOf(patient_trustee.get(position)));
         //Recyclerview onClickListener
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, UpdateActivity.class);
-                intent.putExtra("id", String.valueOf(book_id.get(position)));
-                intent.putExtra("title", String.valueOf(book_title.get(position)));
-                intent.putExtra("author", String.valueOf(book_author.get(position)));
-                intent.putExtra("pages", String.valueOf(book_pages.get(position)));
+                intent.putExtra("id", String.valueOf(patient_id.get(position)));
+                intent.putExtra("pid", String.valueOf(patient_pid.get(position)));
+                intent.putExtra("fname", String.valueOf(patient_name.get(position)));
+                intent.putExtra("dob", String.valueOf(patient_dob.get(position)));
+                intent.putExtra("address", String.valueOf(patient_address.get(position)));
+                intent.putExtra("phone", String.valueOf(patient_phone.get(position)));
+                intent.putExtra("trustee", String.valueOf(patient_trustee.get(position)));
                 activity.startActivityForResult(intent, 1);
             }
         });
@@ -67,20 +77,23 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @Override
     public int getItemCount() {
-        return book_id.size();
+        return patient_id.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView book_id_txt, book_title_txt, book_author_txt, book_pages_txt;
+        TextView patient_id_txt,patient_pid_txt,patient_name_txt,patient_dob_txt,patient_address_txt,patient_phone_txt,patient_trustee_txt;
         LinearLayout mainLayout;
 
         MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            book_id_txt = itemView.findViewById(R.id.book_id_txt);
-            book_title_txt = itemView.findViewById(R.id.book_title_txt);
-            book_author_txt = itemView.findViewById(R.id.book_author_txt);
-            book_pages_txt = itemView.findViewById(R.id.book_pages_txt);
+            patient_id_txt = itemView.findViewById(R.id.patient_id_txt);
+            patient_pid_txt = itemView.findViewById(R.id.patient_pid_txt);
+            patient_name_txt = itemView.findViewById(R.id.patient_name_txt);
+            patient_dob_txt= itemView.findViewById(R.id.patient_dob_txt);
+            patient_address_txt = itemView.findViewById(R.id.patient_address_txt);
+            patient_phone_txt = itemView.findViewById(R.id.patient_phone_txt);
+            patient_trustee_txt= itemView.findViewById(R.id.patient_trustee_txt);
             mainLayout = itemView.findViewById(R.id.mainLayout);
             //Animate Recyclerview
             Animation translate_anim = AnimationUtils.loadAnimation(context, R.anim.translate_anim);

@@ -1,125 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/form1"
-    tools:context=".AddActivity"
-    android:padding="30dp">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
 
-    <TextView
-        android:id="@+id/topic"
-        android:layout_width="wrap_content"
+
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Surgical Application"
-        android:textColor="#fff"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/pid"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=" ادخل اسمك " />
 
-    <TextView
-        android:id="@+id/sub"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Page2:Surgery Details"
-        android:textColor="#011DB6"
-        android:layout_marginTop="65dp"
-        android:textStyle="italic"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/pid"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintTop_toBottomOf="@+id/topic"/>
-    <EditText
-        android:id="@+id/condition"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="100dp"
         android:ems="10"
-        android:background="@drawable/button2"
-        android:hint="Book Title"
-        android:textAlignment="center"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:hint="ادخل رقم الهاتف"
+        android:inputType="number" />
 
-    <EditText
-        android:id="@+id/fname"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:background="@drawable/button2"
-        android:hint="Book Author"
-        android:textAlignment="center"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/condition" />
-
-    <EditText
-        android:id="@+id/dob"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:background="@drawable/button2"
-        android:hint="Number of pages"
-        android:textAlignment="center"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fname" />
-    <EditText
-        android:id="@+id/address"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:background="@drawable/button2"
-        android:hint="Number of pages"
-        android:textAlignment="center"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dob" />
-
-    <EditText
-        android:id="@+id/phone"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:background="@drawable/button2"
-        android:hint="Number of pages"
-        android:textAlignment="center"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/address" />
-    <EditText
-        android:id="@+id/trustee"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:background="@drawable/button2"
-        android:hint="Number of pages"
-        android:textAlignment="center"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
-
+    <ImageButton
+        android:id="@+id/pickImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/attach"
+        android:onClick="openGalleries"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/attach" />
     <Button
-        android:id="@+id/add_button"
+        android:id="@+id/add_button2"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_marginTop="236dp"
@@ -130,8 +48,13 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dob" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
+
+
+    
+

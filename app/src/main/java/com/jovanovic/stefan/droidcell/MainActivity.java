@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     TextView no_data;
 
     MyDatabaseHelper myDB;
-    ArrayList<String> book_id, book_title, book_author, book_pages;
+    ArrayList<String> patient_id, patient_pid,patient_name,patient_dob,patient_address,patient_phone,patient_trustee;
     CustomAdapter customAdapter;
 
     @Override
@@ -50,15 +50,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         myDB = new MyDatabaseHelper(MainActivity.this);
-        book_id = new ArrayList<>();
-        book_title = new ArrayList<>();
-        book_author = new ArrayList<>();
-        book_pages = new ArrayList<>();
+        patient_id= new ArrayList<>();
+        patient_pid = new ArrayList<>();
+        patient_name = new ArrayList<>();
+        patient_dob = new ArrayList<>();
+        patient_address = new ArrayList<>();
+        patient_phone = new ArrayList<>();
+        patient_trustee = new ArrayList<>();
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(MainActivity.this,this, book_id, book_title, book_author,
-                book_pages);
+        customAdapter = new CustomAdapter(MainActivity.this,this,patient_id, patient_pid,patient_name,patient_dob,
+                patient_address,patient_phone,patient_trustee );
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
@@ -79,10 +82,13 @@ public class MainActivity extends AppCompatActivity {
             no_data.setVisibility(View.VISIBLE);
         }else{
             while (cursor.moveToNext()){
-                book_id.add(cursor.getString(0));
-                book_title.add(cursor.getString(1));
-                book_author.add(cursor.getString(2));
-                book_pages.add(cursor.getString(3));
+                patient_id.add(cursor.getString(0));
+                patient_pid.add(cursor.getString(1));
+                patient_name.add(cursor.getString(2));
+                patient_dob.add(cursor.getString(3));
+                patient_address.add(cursor.getString(4));
+                patient_phone.add(cursor.getString(5));
+                patient_trustee.add(cursor.getString(6));
             }
             empty_imageview.setVisibility(View.GONE);
             no_data.setVisibility(View.GONE);
