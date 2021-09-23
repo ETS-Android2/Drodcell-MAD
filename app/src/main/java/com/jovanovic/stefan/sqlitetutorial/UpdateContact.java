@@ -23,10 +23,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
-/**
- * Created by ismail.b.dev@gmail.com.
- * لا اريد منكم سوى الدعاء لي بظهر الغيب
- */
 
 public class UpdateContact extends AppCompatActivity {
 
@@ -87,7 +83,7 @@ public class UpdateContact extends AppCompatActivity {
 
                 db.updateContact(newContact);
 
-                Toast.makeText(UpdateContact.this, "تم التحديث بنجاح", Toast.LENGTH_LONG).show();
+                Toast.makeText(UpdateContact.this, "Updated Successfully", Toast.LENGTH_LONG).show();
                 finish();
 
             }
@@ -122,9 +118,9 @@ public class UpdateContact extends AppCompatActivity {
     private void showAlert() {
 
         AlertDialog.Builder alertBilder = new AlertDialog.Builder(this);
-        alertBilder.setTitle("تأكيد الحذف")
-                .setMessage("هل انت متأكد؟")
-                .setPositiveButton("نعم", new DialogInterface.OnClickListener() {
+        alertBilder.setTitle("Confirm Deletion")
+                .setMessage("are you shure")
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // delete contact

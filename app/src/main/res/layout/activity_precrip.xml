@@ -35,10 +35,10 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="108dp"
 
+        android:background="@drawable/place"
         android:clickable="true"
         android:focusable="true"
-        android:hint="Add image "
-        android:background="@drawable/place"
+        android:hint="Add Precription"
         android:textColorHint="#FAF6F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

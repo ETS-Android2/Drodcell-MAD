@@ -65,7 +65,7 @@ public class AddContact extends AppCompatActivity {
 
                 db.addContact(contact);
 
-                Toast.makeText(AddContact.this, "تم إضافة البيانات", Toast.LENGTH_LONG).show();
+                Toast.makeText(AddContact.this, "Data has been added", Toast.LENGTH_LONG).show();
                 finish();
             }
         });

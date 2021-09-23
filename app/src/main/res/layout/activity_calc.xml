@@ -1,10 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fg"
+    android:scrollbarThumbHorizontal="@android:drawable/button_onoff_indicator_off"
     tools:context=".Calc">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <EditText
+      android:id="@+id/etn1"
+      android:layout_width="339dp"
+      android:layout_height="40dp"
+
+      android:background="@drawable/wrec"
+
+      android:ems="10"
+      android:hint="` Your Province Number"
+      android:inputType="number"
+      android:textColorHighlight="#0C0C0C"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.402"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.091" />
+
+  <EditText
+      android:id="@+id/etn2"
+      android:layout_width="339dp"
+      android:layout_height="40dp"
+      android:layout_marginTop="48dp"
+      android:background="@drawable/wrec"
+      android:ems="10"
+      android:hint="` Times You Ordered Medicine From Our Hospitel"
+      android:inputType="number"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.414"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etn1"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/tvResult"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+
+
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.309" />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="325dp"
+      android:layout_height="36dp"
+      android:layout_marginTop="52dp"
+
+      android:background="@drawable/add"
+      android:hint="` Your Delivery Charge"
+      android:onClick="btnsum"
+
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#F6F5F5"
+      android:textColorHint="#F1E9E9"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.489"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="325dp"
+      android:layout_height="36dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/add"
+      android:hint="` Your discount Price"
+      android:onClick="btnsub"
+      android:textColor="#ffffff"
+      android:textColorHint="#F6F0F0"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

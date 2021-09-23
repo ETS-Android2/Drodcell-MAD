@@ -1,9 +1,6 @@
 package com.jovanovic.stefan.sqlitetutorial;
 
-/**
- * Created by ismail.b.dev@gmail.com.
- *     لا اريد منكم سوى الدعاء لي بظهر الغيب
- */
+
 
 public class Contact {
 

@@ -16,10 +16,6 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-/**
- * Created by ismail.b.dev@gmail.com.
- * لا اريد منكم سوى الدعاء لي بظهر الغيب
- */
 
 public class ContactAdapter extends ArrayAdapter<Contact>{
 

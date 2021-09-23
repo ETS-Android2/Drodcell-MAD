@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20dp"
+    android:background="@drawable/up"
     tools:context="com.jovanovic.stefan.sqlitetutorial.UpdateContact">
 
 
@@ -17,8 +18,8 @@
         android:layout_marginBottom="20dp"
         android:onClick="openGalleries"
         android:scaleType="fitXY"
-        android:background="@drawable/logo"
-        app:srcCompat="@drawable/logo" />
+        android:background="@drawable/rty"
+        app:srcCompat="@drawable/rty" />
 
 
     <EditText
@@ -27,14 +28,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint=" ادخل اسمك " />
+        android:hint=" name " />
 
     <EditText
         android:id="@+id/editPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="ادخل رقم الهاتف"
+        android:hint="number"
         android:inputType="number" />
 
 
@@ -43,8 +44,8 @@
         android:id="@+id/btnUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="تعديل البيانات "
-        android:background="@color/colorPrimary"
+        android:text="update"
+        android:background="@drawable/add"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:layout_marginTop="50dp"/>
