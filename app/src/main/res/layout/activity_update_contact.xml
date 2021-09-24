@@ -30,7 +30,7 @@
     <EditText
         android:id="@+id/editName"
         android:layout_width="335dp"
-        android:layout_height="53dp"
+        android:layout_height="43dp"
         android:background="@drawable/po"
         android:ems="10"
         android:hint=" patient name "
@@ -45,7 +45,7 @@
     <EditText
         android:id="@+id/editPhone"
         android:layout_width="335dp"
-        android:layout_height="53dp"
+        android:layout_height="43dp"
         android:background="@drawable/po"
         android:ems="10"
         android:hint=" Patient contact number"
