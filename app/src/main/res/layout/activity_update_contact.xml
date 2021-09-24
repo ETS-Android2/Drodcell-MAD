@@ -39,7 +39,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,23 +53,25 @@
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.622" />
 
     <Button
         android:id="@+id/btnUpdate"
-        android:layout_width="178dp"
-        android:layout_height="79dp"
+        android:layout_width="271dp"
+        android:layout_height="59dp"
         android:background="@drawable/badd"
         android:hint="Update"
         android:textColor="#ffffff"
         android:textColorHint="#F1DBDB"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
-        tools:layout_editor_absoluteX="102dp" />
+        app:layout_constraintVertical_bias="0.8" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
