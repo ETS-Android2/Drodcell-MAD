@@ -13,10 +13,10 @@
       android:layout_width="339dp"
       android:layout_height="40dp"
 
-      android:background="@drawable/wrec"
+      android:background="@drawable/po"
 
       android:ems="10"
-      android:hint="` Your Province Number"
+      android:hint=" Your Province Number"
       android:inputType="number"
       android:textColorHighlight="#0C0C0C"
       android:textSize="14sp"
@@ -32,9 +32,9 @@
       android:layout_width="339dp"
       android:layout_height="40dp"
       android:layout_marginTop="48dp"
-      android:background="@drawable/wrec"
+      android:background="@drawable/po"
       android:ems="10"
-      android:hint="` Times You Ordered Medicine From Our Hospitel"
+      android:hint=" Times You Ordered Medicine From Our Hospitel"
       android:inputType="number"
       android:textSize="14sp"
       app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +67,7 @@
       android:layout_marginTop="52dp"
 
       android:background="@drawable/add"
-      android:hint="` Your Delivery Charge"
+      android:hint=" Your Delivery Charge"
       android:onClick="btnsum"
 
       android:textColor="#FFFFFF"
@@ -84,7 +84,7 @@
       android:layout_height="36dp"
       android:layout_marginTop="32dp"
       android:background="@drawable/add"
-      android:hint="` Your discount Price"
+      android:hint=" Your discount Price"
       android:onClick="btnsub"
       android:textColor="#ffffff"
       android:textColorHint="#F6F0F0"

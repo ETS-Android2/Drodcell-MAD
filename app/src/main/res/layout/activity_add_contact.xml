@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/as"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/neww"
     android:gravity="center"
+    android:orientation="vertical"
     android:padding="20dp"
     tools:context="com.jovanovic.stefan.sqlitetutorial.AddContact">
 
@@ -15,43 +15,59 @@
         android:id="@+id/pickImg"
         android:layout_width="129dp"
         android:layout_height="90dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rty"
 
+        android:background="@drawable/ddf"
         android:onClick="openGalleries"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/rty" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/ddf" />
 
     <EditText
         android:id="@+id/editName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/wrec"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:layout_width="335dp"
+        android:layout_height="43dp"
+        android:background="@drawable/po"
 
-        android:hint="`Patient name " />
+        android:ems="10"
+        android:hint=" Patient name "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="335dp"
+        android:layout_height="43dp"
+        android:background="@drawable/po"
         android:ems="10"
-        android:hint="`Patient Contact Number"
-        android:background="@drawable/wrec"
-        android:inputType="number" />
-
+        android:hint=" Patient Contact Number"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
 
     <Button
         android:id="@+id/btnConfirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Prescription"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:background="@drawable/add"
+        android:text="Upload Prescription"
         android:textColor="#ffffff"
         android:textSize="18sp"
-        android:layout_marginTop="50dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
