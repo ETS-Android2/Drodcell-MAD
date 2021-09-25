@@ -57,7 +57,7 @@
             android:id="@+id/book_pages_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="50"
+            android:text="100"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="26dp"
             tools:layout_editor_absoluteY="62dp" />
