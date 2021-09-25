@@ -69,7 +69,6 @@ public class UpdateActivity extends AppCompatActivity {
         });
 
     }
-
     void getAndSetIntentData(){
         if(getIntent().hasExtra("id") && getIntent().hasExtra("pid") &&
                 getIntent().hasExtra("preid") &&
@@ -86,9 +85,7 @@ public class UpdateActivity extends AppCompatActivity {
             name = getIntent().getStringExtra("name");
             address= getIntent().getStringExtra("address");
             contact = getIntent().getStringExtra("contact");
-
             nic = getIntent().getStringExtra("nic");
-
             //Setting Intent Data
             pid_input.setText(pid);
             preid_input.setText(preid);

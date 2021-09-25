@@ -24,7 +24,6 @@ public class AddContact extends AppCompatActivity {
     EditText editName, editPhone;
     Button btnConfirm;
     ImageButton pickImag;
-
     byte[] image = null;
     DbContact db;
 
@@ -32,10 +31,7 @@ public class AddContact extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_contact);
-
         db = new DbContact(this);
-
-
         editName = (EditText) findViewById(R.id.editName);
         editPhone = (EditText) findViewById(R.id.editPhone);
         btnConfirm = (Button) findViewById(R.id.btnConfirm);
@@ -45,61 +41,42 @@ public class AddContact extends AppCompatActivity {
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 String name = editName.getText().toString();
-
                 int phone;
                 if (editPhone.getText().toString().equals("")) {
                     phone = 0;
                 } else {
                     phone = Integer.parseInt(editPhone.getText().toString());
                 }
-
                 BitmapDrawable drawable = (BitmapDrawable) pickImag.getDrawable();
                 Bitmap bitmap = drawable.getBitmap();
                 image = getBytes(bitmap);
-
-
                 Contact contact = new Contact(name, phone, image);
-
                 db.addContact(contact);
-
                 Toast.makeText(AddContact.this, "Data has been added", Toast.LENGTH_LONG).show();
                 finish();
             }
         });
 
     }
-
-
     public void openGalleries(View view) {
-
         Intent intentImg = new Intent(Intent.ACTION_GET_CONTENT);
         intentImg.setType("image/*");
-        startActivityForResult(intentImg, 100);
-
-    }
+        startActivityForResult(intentImg, 100); }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        if (resultCode == RESULT_OK && requestCode == 100) {
-
-            Uri uri = data.getData();
-
+                    if (resultCode == RESULT_OK && requestCode == 100) {
+                     Uri uri = data.getData();
             try {
                 InputStream inputStream = getContentResolver().openInputStream(uri);
                 Bitmap decodeStream = BitmapFactory.decodeStream(inputStream);
                 pickImag.setImageBitmap(decodeStream);
-
                 image = getBytes(decodeStream);
-
             } catch (Exception ex) {
-                Log.e("ex", ex.getMessage());
+                      Log.e("ex", ex.getMessage());
             }
-
         }
     }
 

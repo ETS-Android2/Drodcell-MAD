@@ -15,7 +15,7 @@
         android:id="@+id/pickImg"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/st"
+        android:background="@drawable/lkl"
         android:onClick="openGalleries"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.247"
-        app:srcCompat="@drawable/st" />
+        app:srcCompat="@drawable/lkl" />
 
 
     <EditText

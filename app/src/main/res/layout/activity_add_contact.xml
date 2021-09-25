@@ -16,7 +16,7 @@
         android:layout_width="129dp"
         android:layout_height="90dp"
 
-        android:background="@drawable/ddf"
+        android:background="@drawable/lkl"
         android:onClick="openGalleries"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.28"
-        app:srcCompat="@drawable/ddf" />
+        app:srcCompat="@drawable/lkl" />
 
     <EditText
         android:id="@+id/editName"
