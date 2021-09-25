@@ -16,7 +16,7 @@ Function-Apply For Surgery
 •	Remove applied details                                                                                                      
 
 
-
+we use here sqlite database
 
 ![CMS Mockup (Community)](https://user-images.githubusercontent.com/83937185/134776323-2ee21697-f25f-44f4-a07b-d5a3ca44e4a0.png)
 
