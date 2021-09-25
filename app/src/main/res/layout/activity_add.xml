@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/k"
+    android:background="@drawable/sample"
     tools:context=".AddActivity"
     android:padding="30dp">
 
@@ -12,12 +12,12 @@
         android:id="@+id/title_input"
         android:layout_width="345dp"
         android:layout_height="0dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="92dp"
         android:ems="10"
-        android:text="Doctor's Name"
         android:inputType="textPersonName"
+        android:text="Doctor's Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,11 +25,12 @@
         android:id="@+id/author_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:text="Specialization"
         android:inputType="textPersonName"
+        android:text="Specialization"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_input" />
 
@@ -37,12 +38,12 @@
         android:id="@+id/pages_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
-        android:text="Patient Name"
         android:inputType="number"
+        android:text="Patient Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/author_input" />
 
@@ -50,12 +51,17 @@
         android:id="@+id/add_button"
         android:layout_width="352dp"
         android:layout_height="62dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="336dp"
+        android:background="@drawable/button"
         android:text="Add"
         android:textAllCaps="false"
+        android:textColor="#F4F2F2"
+        android:textColorHint="F3ECEC"
         android:textSize="20sp"
+        android:textStyle="bold"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pages_input" />
 
@@ -66,8 +72,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="E mail Address"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="304dp" />
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="336dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -76,8 +82,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Have you channeled before?"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="372dp" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="417dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -86,8 +92,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name of the disease"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="436dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="492dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -96,7 +102,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Patient ID"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="237dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="265dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

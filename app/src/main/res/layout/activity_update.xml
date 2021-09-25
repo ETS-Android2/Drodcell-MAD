@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/k"
+    android:background="@drawable/sample"
     tools:context=".AddActivity"
     android:padding="30dp">
 
@@ -50,9 +50,12 @@
         android:layout_width="343dp"
         android:layout_height="70dp"
         android:layout_marginTop="276dp"
+        android:background="@drawable/button"
         android:text="Update"
+        android:textColor="#F4F2F2"
         android:textAllCaps="false"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,10 +66,13 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/button"
         android:text="Delete"
         android:textAllCaps="false"
-        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textColor="#F4F2F2"
         android:textSize="20sp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_button" />

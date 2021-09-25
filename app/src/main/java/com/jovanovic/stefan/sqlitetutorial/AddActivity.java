@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class AddActivity extends AppCompatActivity {
 
-    EditText title_input, author_input, pages_input;
+    EditText doctor_input, specialization_input, patient_input, pid_input, email_input, channel_input, disease_input;
     Button add_button;
 
     @Override
@@ -17,9 +17,13 @@ public class AddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
-        title_input = findViewById(R.id.title_input);
-        author_input = findViewById(R.id.author_input);
-        pages_input = findViewById(R.id.pages_input);
+        doctor_input = findViewById(R.id.doctor_input2);
+        specialization_input = findViewById(R.id.specialization_input2);
+        patient_input = findViewById(R.id.patient_input2);
+        pid_input=findViewById(R.id.pid_input2);
+        email_input=findViewById(R.id.email_input2);
+        channel_input=findViewById(R.id.channel_input2);
+        disease_input=findViewById(R.id.disease_input2);
         add_button = findViewById(R.id.add_button);
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
