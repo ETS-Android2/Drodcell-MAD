@@ -1,8 +1,6 @@
 # MAD-NEW-project
 
-
-                     ![image 1(1)](https://user-images.githubusercontent.com/83937185/134778033-b2a733c1-4332-48ba-9498-52016ea880ed.png) 
-                                                        MEDIZONE     Android Java Application  
+                                                        MEDIZONE  Android Java Application  
                                 
                                                    Mobile Application for a Private Hospital
 
@@ -44,8 +42,7 @@ Member 3 - (IT20264284),Nethusara P M S
 
 Member 4 - (IT20257804 ),Weerasuriya D P T N
 
-                     ![image 1(1)](https://user-images.githubusercontent.com/83937185/134778033-b2a733c1-4332-48ba-9498-52016ea880ed.png) 
-                       
+
 
 
 
