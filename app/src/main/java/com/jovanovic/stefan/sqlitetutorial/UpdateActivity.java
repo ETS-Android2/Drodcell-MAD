@@ -77,7 +77,7 @@ public class UpdateActivity extends AppCompatActivity {
             doctor = getIntent().getStringExtra("doctor");
             specialization = getIntent().getStringExtra("specialization");
             patient = getIntent().getStringExtra("patient");
-            pid = getIntent().getStringExtra("pid");
+            pid = getIntent().getStringExtra("pi");
             email = getIntent().getStringExtra("email");
             channel = getIntent().getStringExtra("channel");
             disease= getIntent().getStringExtra("disease");
