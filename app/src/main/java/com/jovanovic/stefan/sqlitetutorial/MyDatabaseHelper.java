@@ -1,4 +1,4 @@
-package com.jovanovic.stefan.droidcell;
+package com.jovanovic.stefan.sqlitetutorial;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 class MyDatabaseHelper extends SQLiteOpenHelper {
 
     private Context context;
-    private static final String DATABASE_NAME = "BookLibrary.db";
+    private static final String DATABASE_NAME = "patient.db";
     private static final int DATABASE_VERSION = 1;
 
     private static final String TABLE_NAME = "patient_Surgery";
@@ -32,13 +32,13 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query = "CREATE TABLE " + TABLE_NAME +
-                        " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                        COLUMN_Pid+ " TEXT, " +
-                        COLUMN_Name+ " TEXT, " +
-                        COLUMN_DOB+ " TEXT, " +
-                        COLUMN_address + " TEXT, " +
-                        COLUMN_phone + " INTEGER,"+
-                        COLUMN_trustee + " TEXT);";
+                " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_Pid+ " TEXT, " +
+                COLUMN_Name+ " TEXT, " +
+                COLUMN_DOB+ " TEXT, " +
+                COLUMN_address + " TEXT, " +
+                COLUMN_phone + " INTEGER,"+
+                COLUMN_trustee + " TEXT);";
         db.execSQL(query);
     }
     @Override
@@ -47,11 +47,11 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void addBook(String pid,String fname, String dob, String address,int phone,String trustee){
+    void addPatient(String pid,String fname, String dob, String address,int phone,String trustee){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
-        cv.put(COLUMN_Pid, fname);
+        cv.put(COLUMN_Pid, pid);
         cv.put(COLUMN_Name, fname);
         cv.put(COLUMN_DOB, dob);
         cv.put(COLUMN_address, address);
@@ -76,7 +76,7 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    void updateData(String row_id,String pid, String fname, String dob, String address,int phone,String trustee){
+    void updateData(String row_id, String pid, String fname, String dob, String address, String phone, String trustee){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put(COLUMN_Pid, pid);

@@ -1,7 +1,4 @@
 <resources>
     <string name="app_name">SqliteTutorial</string>
-    <string name="confirm_continue"><![CDATA[Confirm & Continue]]></string>
-    <string name="select">Select Item</string>
-
-
+    <string name="conti_nue">Continue</string>
 </resources>

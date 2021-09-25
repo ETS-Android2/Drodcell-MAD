@@ -1,4 +1,4 @@
-package com.jovanovic.stefan.droidcell;
+package com.jovanovic.stefan.sqlitetutorial;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 
 import java.util.ArrayList;
 

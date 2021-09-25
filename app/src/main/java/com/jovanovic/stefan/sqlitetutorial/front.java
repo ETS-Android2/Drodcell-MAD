@@ -1,4 +1,4 @@
-package com.jovanovic.stefan.droidcell;
+package com.jovanovic.stefan.sqlitetutorial;
 
 
 import android.content.Intent;
@@ -8,12 +8,14 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.jovanovic.stefan.sqlitetutorial.R;
+
 public class front extends AppCompatActivity {
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.front_main);
+        setContentView(R.layout.front);
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

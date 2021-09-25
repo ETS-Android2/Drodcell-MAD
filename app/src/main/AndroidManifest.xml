@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jovanovic.stefan.droidcell">
+    package="com.jovanovic.stefan.sqlitetutorial">
 
     <application
         android:allowBackup="true"
@@ -13,14 +13,16 @@
             android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".AddActivity"
-            android:label="Add Book"
+            android:label=""
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
+            android:label=""
             android:parentActivityName=".front"/>
         <activity
             android:name=".front"
-            android:label="Book Library">
+            android:label=""
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

@@ -1,4 +1,4 @@
-package com.jovanovic.stefan.droidcell;
+package com.jovanovic.stefan.sqlitetutorial;
 
 
 import android.app.Activity;
@@ -16,6 +16,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
+
 
 import java.util.ArrayList;
 
@@ -48,7 +49,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
-    public void onBindViewHolder(@NonNull final MyViewHolder holder,final int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
+
         holder.patient_id_txt.setText(String.valueOf(patient_id.get(position)));
         holder.patient_pid_txt.setText(String.valueOf(patient_pid.get(position)));
         holder.patient_name_txt.setText(String.valueOf(patient_name.get(position)));
@@ -56,10 +58,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.patient_address_txt.setText(String.valueOf(patient_address.get(position)));
         holder.patient_phone_txt.setText(String.valueOf(patient_phone.get(position)));
         holder.patient_trustee_txt.setText(String.valueOf(patient_trustee.get(position)));
-        //Recyclerview onClickListener
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view){
                 Intent intent = new Intent(context, UpdateActivity.class);
                 intent.putExtra("id", String.valueOf(patient_id.get(position)));
                 intent.putExtra("pid", String.valueOf(patient_pid.get(position)));

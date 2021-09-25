@@ -1,4 +1,4 @@
-package com.jovanovic.stefan.droidcell;
+package com.jovanovic.stefan.sqlitetutorial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 
 public class AddActivity extends AppCompatActivity {
 
@@ -29,13 +30,14 @@ public class AddActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(AddActivity.this);
-                myDB.addBook(pid_input.getText().toString().trim(),
+                myDB.addPatient(pid_input.getText().toString().trim(),
                         fname_input.getText().toString().trim(),
                         dob_input.getText().toString().trim(),
                         address_input.getText().toString().trim(),
                         Integer.valueOf(phone_input.getText().toString().trim()),
-                                trustee_input.getText().toString().trim());
+                        trustee_input.getText().toString().trim());
             }
         });
     }
 }
+

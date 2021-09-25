@@ -1,4 +1,4 @@
-package com.jovanovic.stefan.droidcell;
+package com.jovanovic.stefan.sqlitetutorial;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
@@ -37,7 +37,7 @@ public class UpdateActivity extends AppCompatActivity {
         //First we call this
         getAndSetIntentData();
 
-        //Set actionbar title after getAndSetIntentData method
+         //Set actionbar title after getAndSetIntentData method
         ActionBar ab = getSupportActionBar();
         if (ab != null) {
             ab.setTitle(pid);
@@ -46,6 +46,7 @@ public class UpdateActivity extends AppCompatActivity {
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //And only then we call this
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
                 pid = pid_input.getText().toString().trim();
@@ -54,7 +55,7 @@ public class UpdateActivity extends AppCompatActivity {
                 address = address_input.getText().toString().trim();
                 phone = phone_input.getText().toString().trim();
                 trustee = trustee_input.getText().toString().trim();
-                myDB.updateData(id,pid,fname,dob,address,phone,trustee);
+                myDB.updateData(id, pid, fname, dob, address, phone, trustee);
             }
         });
         delete_button.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +72,7 @@ public class UpdateActivity extends AppCompatActivity {
                 getIntent().hasExtra("dob") && getIntent().hasExtra("address") &&
                 getIntent().hasExtra("phone")&& getIntent().hasExtra("trustee") ){
             //Getting Data from Intent
+            id = getIntent().getStringExtra("id");
             pid = getIntent().getStringExtra("pid");
             fname= getIntent().getStringExtra("fname");
             dob = getIntent().getStringExtra("dob");
