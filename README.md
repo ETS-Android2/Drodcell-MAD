@@ -1,8 +1,7 @@
 # MAD-NEW-project
 
 
-
-                                ![image 1(1)](https://user-images.githubusercontent.com/83937185/134777853-3836be03-a4af-41bc-9880-4e19224841b3.png)
+                     ![image 1(1)](https://user-images.githubusercontent.com/83937185/134778033-b2a733c1-4332-48ba-9498-52016ea880ed.png) 
                                                         MEDIZONE     Android Java Application  
                                 
                                                    Mobile Application for a Private Hospital
@@ -38,8 +37,11 @@ Clone the repository :https://github.com/123kavi/Drodcell-MAD.git
 Contributors
 
 Group Leader - (IT20258030),GunawardhanaHPMN
+
 Member 2 -(IT20136710), Kariyapperuma K M K R
+
 Member 3 - (IT20264284),Nethusara P M S
+
 Member 4 - (IT20257804 ),Weerasuriya D P T N
 
                        
