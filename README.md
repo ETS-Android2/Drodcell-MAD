@@ -19,10 +19,5 @@ Function-Apply For Surgery
 we use here sqlite database
 
 
-![1200px-Android_Studio_Icon_(2014-2019) 1](https://user-images.githubusercontent.com/83937185/134776454-4f28ce40-ba03-4e39-80df-c6eba7f785c9.png)
+![Icons Freebie (Community)](https://user-images.githubusercontent.com/83937185/134777704-0ff51538-1351-44a7-ba42-5bc12149bf49.png)
 
-
-
-
-
-![CMS Mockup (Community)](https://user-images.githubusercontent.com/83937185/134776323-2ee21697-f25f-44f4-a07b-d5a3ca44e4a0.png)
