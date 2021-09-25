@@ -1,5 +1,4 @@
-
-                  ![image 1(2)](https://user-images.githubusercontent.com/83937185/134778111-32b324a9-ec53-4219-bd6d-5418d1e13c5c.png)      MEDIZONE  Android Java Application  
+ ![image 1(2)](https://user-images.githubusercontent.com/83937185/134778111-32b324a9-ec53-4219-bd6d-5418d1e13c5c.png)      MEDIZONE  Android Java Application  
                                                    
                                 
                                                    Mobile Application for a Private Hospital
