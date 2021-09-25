@@ -15,3 +15,5 @@ Function-Apply For Surgery
 •	Update applied details
 •	Remove applied details                                                                                                      
 
+
+![Screenshot_1632316176](https://user-images.githubusercontent.com/83937185/134776040-37d9c07a-0d2b-4f91-a92d-603e1be9c110.png)
