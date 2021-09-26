@@ -1,3 +1,3 @@
-SQLite + Android - Complete Tutorial
-
-Note: Video tutorials will be available on my Youtube channel (Stevdza-San) soon.
+Data base-Sqlite language-
+Java IDE-Android Studio Include-
+Crud oparations,image upload.
