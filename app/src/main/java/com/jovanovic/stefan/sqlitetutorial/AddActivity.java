@@ -22,7 +22,7 @@ public class AddActivity extends AppCompatActivity {
         patient_input = findViewById(R.id.patient_input2);
         pid_input=findViewById(R.id.pid_input2);
         email_input=findViewById(R.id.email_input2);
-        channel_input=findViewById(R.id.channel_input2);
+        channel_input=findViewById(R.id.channel_input2));
         disease_input=findViewById(R.id.disease_input2);
         add_button = findViewById(R.id.add_button);
         add_button.setOnClickListener(new View.OnClickListener() {
