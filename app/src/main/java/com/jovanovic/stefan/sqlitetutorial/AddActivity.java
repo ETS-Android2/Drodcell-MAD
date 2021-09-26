@@ -18,7 +18,7 @@ public class AddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add);
 
         doctor_input = findViewById(R.id.doctor_input2);
-        specialization_input = findViewById(R.id.specialization_input2);
+        specialization_input = findViewById(R.id.specialization_input2));
         patient_input = findViewById(R.id.patient_input2);
         pid_input=findViewById(R.id.pid_input2);
         email_input=findViewById(R.id.email_input2);
