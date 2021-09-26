@@ -43,15 +43,15 @@ JDK version:java 8
  
 Clone the repository :https://github.com/123kavi/Drodcell-MAD.git
 
-Contributors:
+#CONTRIBUTORS#
 
-Group Leader - (IT20258030),GunawardhanaHPMN
+Group Leader - (IT20258030),GunawardhanaHPMN (Apply For Surgery)
 
-Member 2 -(IT20136710), Kariyapperuma K M K R
+Member 2 -(IT20136710), Kariyapperuma K M K R ( Order Prescription)
 
-Member 3 - (IT20264284),Nethusara P M S
+Member 3 - (IT20264284),Nethusara P M S (Make an doctor Appointment)
 
-Member 4 - (IT20257804 ),Weerasuriya D P T N
+Member 4 - (IT20257804 ),Weerasuriya D P T N ( Request Emergency Service )
 
 
 
