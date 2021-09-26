@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     TextView no_data;
 
     MyDatabaseHelper myDB;
-    ArrayList<String> book_id, book_title, book_author, book_pages;
+    ArrayList<String> adding_id, adding_doctor, adding_specialization, adding_patient, adding_pid, adding_email, adding_channel, adding_disease;
     CustomAdapter customAdapter;
 
     @Override
@@ -53,15 +53,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         myDB = new MyDatabaseHelper(MainActivity.this);
-        book_id = new ArrayList<>();
-        book_title = new ArrayList<>();
-        book_author = new ArrayList<>();
-        book_pages = new ArrayList<>();
+        adding_id = new ArrayList<>();
+        adding_doctor = new ArrayList<>();
+        adding_specialization = new ArrayList<>();
+        adding_patient = new ArrayList<>();
+        adding_pid = new ArrayList<>();
+        adding_email = new ArrayList<>();
+        adding_channel = new ArrayList<>();
+        adding_disease = new ArrayList<>();
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(MainActivity.this,this, book_id, book_title, book_author,
-                book_pages);
+        customAdapter = new CustomAdapter(MainActivity.this,this, adding_id, adding_doctor, adding_specialization, adding_patient, adding_pid, adding_email, adding_channel, adding_disease);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
@@ -82,10 +85,14 @@ public class MainActivity extends AppCompatActivity {
             no_data.setVisibility(View.VISIBLE);
         }else{
             while (cursor.moveToNext()){
-                book_id.add(cursor.getString(0));
-                book_title.add(cursor.getString(1));
-                book_author.add(cursor.getString(2));
-                book_pages.add(cursor.getString(3));
+                adding_id.add(cursor.getString(0));
+                adding_doctor.add(cursor.getString(1));
+                adding_specialization.add(cursor.getString(2));
+                adding_patient.add(cursor.getString(4));
+                adding_pid.add(cursor.getString(5));
+                adding_email.add(cursor.getString(6));
+                adding_channel.add(cursor.getString(7));
+                adding_disease.add(cursor.getString(8));
             }
             empty_imageview.setVisibility(View.GONE);
             no_data.setVisibility(View.GONE);

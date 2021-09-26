@@ -23,16 +23,20 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     private Context context;
     private Activity activity;
-    private ArrayList book_id, book_title, book_author, book_pages;
+    private ArrayList adding_id, adding_doctor, adding_specialization, adding_patient, adding_pid, adding_email, adding_channel, adding_disease;
 
-    CustomAdapter(Activity activity, Context context, ArrayList book_id, ArrayList book_title, ArrayList book_author,
-                  ArrayList book_pages){
+    CustomAdapter(Activity activity, Context context, ArrayList adding_id, ArrayList adding_doctor, ArrayList adding_specialization, ArrayList adding_patient, ArrayList adding_pid,ArrayList adding_email, ArrayList adding_channel,
+                  ArrayList adding_disease){
         this.activity = activity;
         this.context = context;
-        this.book_id = book_id;
-        this.book_title = book_title;
-        this.book_author = book_author;
-        this.book_pages = book_pages;
+        this.adding_id = adding_id;
+        this.adding_doctor= adding_doctor;
+        this.adding_specialization = adding_specialization;
+        this.adding_patient= adding_patient;
+        this.adding_pid= adding_pid;
+        this.adding_email= adding_email;
+        this.adding_channel= adding_channel;
+        this.adding_disease= adding_disease;
     }
 
     @NonNull
@@ -46,19 +50,28 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
-        holder.book_id_txt.setText(String.valueOf(book_id.get(position)));
-        holder.book_title_txt.setText(String.valueOf(book_title.get(position)));
-        holder.book_author_txt.setText(String.valueOf(book_author.get(position)));
-        holder.book_pages_txt.setText(String.valueOf(book_pages.get(position)));
+        holder.adding_id_txt.setText(String.valueOf(adding_id.get(position)));
+        holder.adding_doctor_txt.setText(String.valueOf(adding_doctor.get(position)));
+        holder.adding_specialization_txt.setText(String.valueOf(adding_specialization.get(position)));
+        holder.adding_patient_txt.setText(String.valueOf(adding_patient.get(position)));
+        holder.adding_pid_txt.setText(String.valueOf(adding_pid.get(position)));
+        holder.adding_email_txt.setText(String.valueOf(adding_email.get(position)));
+        holder.adding_channel_txt.setText(String.valueOf(adding_channel.get(position)));
+        holder.adding_disease_txt.setText(String.valueOf(adding_disease.get(position)));
         //Recyclerview onClickListener
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, UpdateActivity.class);
-                intent.putExtra("id", String.valueOf(book_id.get(position)));
-                intent.putExtra("title", String.valueOf(book_title.get(position)));
-                intent.putExtra("author", String.valueOf(book_author.get(position)));
-                intent.putExtra("pages", String.valueOf(book_pages.get(position)));
+                intent.putExtra("id", String.valueOf(adding_id.get(position)));
+                intent.putExtra("doctor", String.valueOf(adding_doctor.get(position)));
+                intent.putExtra("specialization", String.valueOf(adding_specialization.get(position)));
+                intent.putExtra("patient", String.valueOf(adding_patient.get(position)));
+                intent.putExtra("pid", String.valueOf(adding_pid.get(position)));
+                intent.putExtra("email", String.valueOf(adding_email.get(position)));
+                intent.putExtra("channel", String.valueOf(adding_channel.get(position)));
+                intent.putExtra("disease", String.valueOf(adding_disease.get(position)));
+
                 activity.startActivityForResult(intent, 1);
             }
         });
@@ -68,20 +81,25 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @Override
     public int getItemCount() {
-        return book_id.size();
+        return adding_id.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView book_id_txt, book_title_txt, book_author_txt, book_pages_txt;
+        TextView adding_id_txt, adding_doctor_txt, adding_specialization_txt, adding_patient_txt, adding_pid_txt, adding_email_txt, adding_channel_txt, adding_disease_txt;
         LinearLayout mainLayout;
 
         MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            book_id_txt = itemView.findViewById(R.id.book_id_txt);
-            book_title_txt = itemView.findViewById(R.id.book_title_txt);
-            book_author_txt = itemView.findViewById(R.id.book_author_txt);
-            book_pages_txt = itemView.findViewById(R.id.book_pages_txt);
+            adding_id_txt = itemView.findViewById(R.id.adding_id_txt);
+            adding_doctor_txt = itemView.findViewById(R.id.adding_doctor_txt);
+            adding_specialization_txt = itemView.findViewById(R.id.adding_specialization_txt);
+            adding_patient_txt = itemView.findViewById(R.id.adding_patient_txt);
+            adding_pid_txt = itemView.findViewById(R.id.adding_pid_txt);
+            adding_email_txt = itemView.findViewById(R.id.adding_email_txt);
+            adding_channel_txt = itemView.findViewById(R.id.addding_channel_txt);
+            adding_disease_txt = itemView.findViewById(R.id.adding_disease_txt);
+
             mainLayout = itemView.findViewById(R.id.mainLayout);
             //Animate Recyclerview
             Animation translate_anim = AnimationUtils.loadAnimation(context, R.anim.translate_anim);
