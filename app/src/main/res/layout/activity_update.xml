@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/sample"
     tools:context=".AddActivity"
-    android:padding="29dp">
+    android:padding="30dp">
 
     <EditText
         android:id="@+id/title_input2"
