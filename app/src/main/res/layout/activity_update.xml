@@ -110,7 +110,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName8"
         android:layout_width="349dp"
-        android:layout_height="49dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name of the disease"
