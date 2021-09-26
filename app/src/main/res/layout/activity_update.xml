@@ -71,7 +71,7 @@
         android:textAllCaps="false"
         android:textStyle="bold"
         android:textColor="#F4F2F2"
-        android:textSize="21sp"
+        android:textSize="22sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
