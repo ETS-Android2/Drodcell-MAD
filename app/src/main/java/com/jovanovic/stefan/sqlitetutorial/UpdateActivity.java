@@ -40,7 +40,7 @@ public class UpdateActivity extends AppCompatActivity {
         //Set actionbar title after getAndSetIntentData method
         ActionBar ab = getSupportActionBar();
         if (ab != null) {
-            ab.setDoctor(doctor);
+            ab.setTitle(doctor);
         }
 
         update_button.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +77,7 @@ public class UpdateActivity extends AppCompatActivity {
             doctor = getIntent().getStringExtra("doctor");
             specialization = getIntent().getStringExtra("specialization");
             patient = getIntent().getStringExtra("patient");
-            pid = getIntent().getStringExtra("pi");
+            pid = getIntent().getStringExtra("pid");
             email = getIntent().getStringExtra("email");
             channel = getIntent().getStringExtra("channel");
             disease= getIntent().getStringExtra("disease");

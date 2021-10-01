@@ -9,7 +9,7 @@
     android:padding="30dp">
 
     <EditText
-        android:id="@+id/title_input2"
+        android:id="@+id/doctor_input2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/author_input2"
+        android:id="@+id/specialization_input2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title_input2" />
 
     <EditText
-        android:id="@+id/pages_input2"
+        android:id="@+id/patient_input2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -78,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/update_button" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/pid_input2"
         android:layout_width="343dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -88,7 +88,7 @@
         tools:layout_editor_absoluteY="234dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/email_input2"
         android:layout_width="341dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -98,7 +98,7 @@
         tools:layout_editor_absoluteY="300dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/channel_input2"
         android:layout_width="335dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -108,7 +108,7 @@
         tools:layout_editor_absoluteY="365dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/disease_input2"
         android:layout_width="349dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -116,5 +116,16 @@
         android:text="Name of the disease"
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="429dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="333dp"
+        android:layout_height="59dp"
+        android:text="Channeling Details"
+        android:textSize="30dp"
+        android:textColor="#F4F2F2"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="3dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

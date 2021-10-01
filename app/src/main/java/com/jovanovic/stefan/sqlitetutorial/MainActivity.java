@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(MainActivity.this,this, adding_id, adding_doctor, adding_specialization, adding_patient, adding_pid, adding_email, adding_channel, adding_disease);
+        customAdapter = new CustomAdapter(MainActivity.this,this, adding_id, adding_doctor, adding_specialization, adding_patient, adding_pid, adding_email,
+                adding_channel, adding_disease);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 

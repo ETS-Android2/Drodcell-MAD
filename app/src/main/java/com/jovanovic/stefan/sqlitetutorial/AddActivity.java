@@ -29,14 +29,29 @@ public class AddActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(AddActivity.this);
-                myDB.addBook(doctor_input.getText().toString().trim(),
-                        (specialization_input.getText().toString().trim()),
-                        (patient_input.getText().toString().trim()),
-                (pid_input.getText().toString().trim()),
-                        (email_input.getText().toString().trim()),
-                        (channel_input.getText().toString().trim()),
-                        (disease_input.getText().toString().trim(),));
+                myDB.addBook( doctor_input.getText().toString().trim(),
+                        specialization_input.getText().toString().trim(),
+                        patient_input.getText().toString().trim(),
+                        pid_input.getText().toString().trim(),
+                        email_input.getText().toString().trim(),
+                        channel_input.getText().toString().trim(),
+                        disease_input.getText().toString().trim(),));
             }
         });
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

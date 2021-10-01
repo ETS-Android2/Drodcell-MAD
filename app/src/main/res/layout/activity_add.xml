@@ -9,7 +9,7 @@
     android:padding="30dp">
 
     <EditText
-        android:id="@+id/title_input"
+        android:id="@+id/doctor_input"
         android:layout_width="345dp"
         android:layout_height="0dp"
         android:layout_marginTop="92dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/author_input"
+        android:id="@+id/specialization_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title_input" />
 
     <EditText
-        android:id="@+id/pages_input"
+        android:id="@+id/patient_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -61,12 +61,12 @@
         android:textStyle="bold"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pages_input" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/email_input"
         android:layout_width="357dp"
         android:layout_height="58dp"
         android:ems="10"
@@ -76,7 +76,7 @@
         tools:layout_editor_absoluteY="336dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/channel_input"
         android:layout_width="355dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -86,7 +86,7 @@
         tools:layout_editor_absoluteY="417dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/disease_input"
         android:layout_width="344dp"
         android:layout_height="46dp"
         android:ems="10"
@@ -96,7 +96,7 @@
         tools:layout_editor_absoluteY="492dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/pid_input"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -104,5 +104,16 @@
         android:text="Patient ID"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="265dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="308dp"
+        android:layout_height="70dp"
+        android:text="Chanelling Details"
+        android:textColor="#F4F2F2"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="207dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

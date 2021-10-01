@@ -12,14 +12,19 @@ import androidx.annotation.Nullable;
 class MyDatabaseHelper extends SQLiteOpenHelper {
 
     private Context context;
-    private static final String DATABASE_NAME = "BookLibrary.db";
+    private static final String DATABASE_NAME = "AddLibrary.db";
     private static final int DATABASE_VERSION = 1;
 
-    private static final String TABLE_NAME = "my_library";
+    private static final String TABLE_NAME = "my_adding_library";
     private static final String COLUMN_ID = "_id";
-    private static final String COLUMN_TITLE = "book_title";
-    private static final String COLUMN_AUTHOR = "book_author";
-    private static final String COLUMN_PAGES = "book_pages";
+    private static final String COLUMN_DOCTOR = "adding_doctor";
+    private static final String COLUMN_SPECIALIZATION = "adding_specialization";
+    private static final String COLUMN_PATIENT = "adding_patient";
+    private static final String COLUMN_PID = "adding_pid";
+    private static final String COLUMN_EMAIL = "adding_email";
+    private static final String COLUMN_CHANNEL = "adding_channel";
+    private static final String COLUMN_DISEASE = "adding_disease";
+
 
     MyDatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -30,9 +35,13 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String query = "CREATE TABLE " + TABLE_NAME +
                         " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                        COLUMN_TITLE + " TEXT, " +
-                        COLUMN_AUTHOR + " TEXT, " +
-                        COLUMN_PAGES + " INTEGER);";
+                        COLUMN_DOCTOR + " TEXT, " +
+                        COLUMN_SPECIALIZATION + " TEXT, " +
+                        COLUMN_PATIENT + " TEXT, " +
+                        COLUMN_PID + " TEXT, " +
+                        COLUMN_EMAIL + " TEXT, " +
+                        COLUMN_CHANNEL + " TEXT, " +
+                        COLUMN_DISEASE + " TEXT);";
         db.execSQL(query);
     }
     @Override
@@ -45,9 +54,14 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
-        cv.put(COLUMN_TITLE, title);
-        cv.put(COLUMN_AUTHOR, author);
-        cv.put(COLUMN_PAGES, pages);
+        cv.put(COLUMN_DOCTOR, doctor);
+        cv.put(COLUMN_SPECIALIZATION, specialization);
+        cv.put(COLUMN_PATIENT, patient);
+        cv.put(COLUMN_PID, pid);
+        cv.put(COLUMN_EMAIL, email);
+        cv.put(COLUMN_CHANNEL, channel);
+        cv.put(COLUMN_DISEASE, disease);
+
         long result = db.insert(TABLE_NAME,null, cv);
         if(result == -1){
             Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
@@ -67,12 +81,16 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    void updateData(String row_id, String title, String author, String pages){
+    void updateData(String row_id, String doctor, String specialization, String patient, String pid, String email, String channel, String disease){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put(COLUMN_TITLE, title);
-        cv.put(COLUMN_AUTHOR, author);
-        cv.put(COLUMN_PAGES, pages);
+        cv.put(COLUMN_DOCTOR, doctor);
+        cv.put(COLUMN_SPECIALIZATION, specialization);
+        cv.put(COLUMN_PATIENT, patient);
+        cv.put(COLUMN_PID, pid);
+        cv.put(COLUMN_EMAIL, email);
+        cv.put(COLUMN_CHANNEL, channel);
+        cv.put(COLUMN_DISEASE, disease);
 
         long result = db.update(TABLE_NAME, cv, "_id=?", new String[]{row_id});
         if(result == -1){
