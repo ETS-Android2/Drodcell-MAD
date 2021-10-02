@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+,,                         <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,12 +10,12 @@
 
     <EditText
         android:id="@+id/doctor_input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:text="Doctor's Name"
+        android:layout_width="354dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="88dp"
+        android:ems="12"
         android:inputType="textPersonName"
+        android:text="Doctor's Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,89 +23,82 @@
 
     <EditText
         android:id="@+id/specialization_input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
         android:ems="10"
-        android:text="Specialization"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_input2" />
+        android:text="Specialization"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="142dp" />
 
     <EditText
         android:id="@+id/patient_input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="349dp"
+        android:layout_height="55dp"
         android:ems="10"
-        android:text="Patient Name"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/author_input2" />
+        android:text="Patient Name"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="202dp" />
 
     <Button
         android:id="@+id/update_button"
-        android:layout_width="343dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="276dp"
+        android:layout_width="344dp"
+        android:layout_height="57dp"
         android:background="@drawable/button"
         android:text="Update"
-        android:textColor="#F4F2F2"
         android:textAllCaps="false"
+        android:textColor="#F4F2F2"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pages_input2" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="536dp" />
 
     <Button
         android:id="@+id/delete_button"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="334dp"
+        android:layout_height="54dp"
         android:background="@drawable/button"
         android:text="Delete"
         android:textAllCaps="false"
-        android:textStyle="bold"
         android:textColor="#F4F2F2"
         android:textSize="20sp"
+        android:textStyle="bold"
 
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/update_button" />
+        tools:layout_editor_absoluteY="607dp" />
 
     <EditText
         android:id="@+id/pid_input2"
-        android:layout_width="343dp"
-        android:layout_height="45dp"
+        android:layout_width="346dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Patient ID"
         tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="234dp" />
+        tools:layout_editor_absoluteY="271dp" />
 
     <EditText
         android:id="@+id/email_input2"
-        android:layout_width="341dp"
-        android:layout_height="45dp"
+        android:layout_width="349dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="E mail Address"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="300dp" />
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="334dp" />
 
     <EditText
         android:id="@+id/channel_input2"
-        android:layout_width="335dp"
-        android:layout_height="45dp"
+        android:layout_width="351dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Have you channeled before?"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="365dp" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="402dp" />
 
     <EditText
         android:id="@+id/disease_input2"
@@ -114,18 +107,18 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name of the disease"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="429dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="459dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="333dp"
-        android:layout_height="59dp"
+        android:layout_width="303dp"
+        android:layout_height="41dp"
         android:text="Channeling Details"
-        android:textSize="30dp"
         android:textColor="#F4F2F2"
+        android:textSize="30dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="3dp" />
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="5dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
