@@ -1,4 +1,4 @@
-,,                         <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -28,7 +28,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Specialization"
-        tools:layout_editor_absoluteX="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="142dp" />
 
     <EditText
@@ -38,7 +40,9 @@
         android:ems="10"
         android:inputType="number"
         android:text="Patient Name"
-        tools:layout_editor_absoluteX="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="202dp" />
 
     <Button
@@ -51,7 +55,9 @@
         android:textColor="#F4F2F2"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="536dp" />
 
     <Button
@@ -68,7 +74,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.337"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="607dp" />
+        tools:layout_editor_absoluteY="607dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/pid_input2"
@@ -77,8 +84,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Patient ID"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="271dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/email_input2"
@@ -87,7 +96,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="E mail Address"
-        tools:layout_editor_absoluteX="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="334dp" />
 
     <EditText
@@ -97,8 +108,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Have you channeled before?"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="402dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="402dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/disease_input2"
@@ -107,8 +120,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name of the disease"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="459dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="459dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -118,7 +133,9 @@
         android:textColor="#F4F2F2"
         android:textSize="30dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="5dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="5dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
