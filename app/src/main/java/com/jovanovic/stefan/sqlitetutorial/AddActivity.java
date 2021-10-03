@@ -35,7 +35,7 @@ public class AddActivity extends AppCompatActivity {
                         pid_input.getText().toString().trim(),
                         email_input.getText().toString().trim(),
                         channel_input.getText().toString().trim(),
-                        disease_input.getText().toString().trim());
+                        disease_input.getText().toString().trim();
             }
         });
     }
